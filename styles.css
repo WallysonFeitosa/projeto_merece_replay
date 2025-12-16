@@ -465,6 +465,7 @@ body {
         flex-direction: column;
         padding: 40px 20px;
         text-align: center;
+        background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.4)), url(img/chute.mobile.png);
     }
 
     .content-left {
@@ -492,6 +493,7 @@ body {
     .pricing-section, .tutorial-section {
         padding: 50px 20px;
     }
+    
 }
 
 /* ----------------------------------- */

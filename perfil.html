@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil - Filma Eu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/LOGO OFICIAL NEGATIVA.png" alt="Logo Oficial" width="150">
+            </a>
+        </div>
+        <div class="user-actions">
+            <!-- Injetado via JS -->
+        </div>
+    </header>
+
+    <main class="profile-container">
+        <div class="profile-grid">
+            <!-- Cartão de Dados Pessoais -->
+            <div class="profile-card">
+                <h2><i class="fas fa-user-edit"></i> Meus Dados</h2>
+                <form id="profile-form">
+                    <div class="form-group">
+                        <label>Nome Completo</label>
+                        <input type="text" id="profile-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>CPF</label>
+                        <input type="text" id="profile-cpf" required>
+                    </div>
+                    <div class="form-group">
+                        <label>E-mail (Não editável)</label>
+                        <input type="email" id="profile-email" disabled style="opacity: 0.7; cursor: not-allowed;">
+                    </div>
+                    <div class="form-group">
+                        <label>Telefone</label>
+                        <input type="tel" id="profile-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Plano Atual</label>
+                        <select id="profile-plan">
+                            <option value="Nenhum">Nenhum</option>
+                            <option value="Casual">Casual</option>
+                            <option value="Mensalista">Mensalista</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn primary-btn full-width">SALVAR ALTERAÇÕES</button>
+                </form>
+            </div>
+
+            <!-- Cartão de Campos/Quadras -->
+            <div class="profile-card">
+                <h2><i class="fas fa-futbol"></i> Meus Campos</h2>
+                <p class="card-desc">Cadastre as quadras onde você joga para solicitar a instalação.</p>
+                
+                <div id="fields-list" class="fields-list">
+                    <!-- Lista injetada via JS -->
+                </div>
+
+                <button id="btn-add-field" class="btn secondary-btn full-width"><i class="fas fa-plus"></i> CADASTRAR NOVO CAMPO</button>
+                
+                <!-- Formulário Oculto de Novo Campo -->
+                <div id="new-field-form-container" style="display: none; margin-top: 20px; border-top: 1px solid #333; padding-top: 20px;">
+                    <h3>Novo Campo</h3>
+                    <form id="field-form">
+                        <div class="form-group">
+                            <label>Nome da Quadra</label>
+                            <input type="text" id="field-name" placeholder="Ex: Arena Show de Bola" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Endereço / Localização</label>
+                            <input type="text" id="field-address" placeholder="Rua, Bairro ou Cidade" required>
+                        </div>
+                        <button type="submit" class="btn primary-btn full-width">CONFIRMAR CADASTRO</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <button class="mobile-back-btn" onclick="history.back()"><i class="fas fa-arrow-left"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>

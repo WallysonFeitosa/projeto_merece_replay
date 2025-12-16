@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Replays - Filma Eu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/LOGO OFICIAL NEGATIVA.png" alt="Logo Oficial" width="150">
+            </a>
+        </div>
+        <div class="user-actions">
+            <span class="welcome-msg">Olá, Jogador</span>
+            <a href="index.html" class="login-btn logout-btn"><i class="fas fa-sign-out-alt"></i> SAIR</a>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <!-- Barra Lateral: Calendário e Filtros -->
+        <aside class="sidebar">
+            <div class="calendar-widget">
+                <h3>Histórico</h3>
+                <div class="calendar-header">
+                    <select id="month-select" class="calendar-select"></select>
+                    <select id="year-select" class="calendar-select"></select>
+                </div>
+                <div id="calendar-grid" class="calendar-grid">
+                    <!-- Dias gerados via JS -->
+                </div>
+            </div>
+        </aside>
+
+        <!-- Área de Conteúdo: Vídeos -->
+        <section class="content-area">
+            <h2 id="video-section-title">Todos os Vídeos</h2>
+            <div id="video-grid" class="video-grid">
+                <!-- Vídeos carregados via JS -->
+            </div>
+        </section>
+    </main>
+
+    <button class="mobile-back-btn" onclick="history.back()"><i class="fas fa-arrow-left"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "user_videos": [
+    {
+      "id": 101,
+      "date": "2025-10-25",
+      "time": "19:30",
+      "location": "Arena Central",
+      "duration": "00:45",
+      "thumbnail": "img/chute.jpg"
+    },
+    {
+      "id": 102,
+      "date": "2025-10-25",
+      "time": "19:45",
+      "location": "Arena Central",
+      "duration": "01:12",
+      "thumbnail": "img/chute.jpg"
+    },
+    {
+      "id": 103,
+      "date": "2025-12-15",
+      "time": "20:10",
+      "location": "Quadra 2",
+      "duration": "00:30",
+      "thumbnail": "img/chute.jpg"
+    }
+  ]
+}

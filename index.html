@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Similar - Filma Eu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/LOGO OFICIAL NEGATIVA.png" alt="Logo Oficial" width="150">
+            </a>
+        </div>
+        <div class="user-actions">
+            <a href="#" class="login-btn"><i class="fas fa-user-circle"></i> LOGIN</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- SEÇÃO HERO (Original) -->
+        <section class="hero-section">
+            <div class="content-left">
+                <h1>Grave seus Replays</h1>
+                <p>Registre os melhores e piores momentos de sua turma com o sistema de gravação que mais cresce no Brasil!</p>
+                
+                <div class="call-to-action">
+                    <a href="#pricing-section" class="btn primary-btn">VER PLANOS</a>
+                </div>
+
+                <div class="app-downloads">
+                    <a href="#"><i class="fab fa-apple"></i> Apple Store</a>
+                    <a href="#"><i class="fab fa-google-play"></i> Google Play</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE PREÇOS -->
+        <section id="pricing-section" class="pricing-section">
+            <h2 class="section-title">Nossos Planos</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Casual</h3>
+                    <div class="price">R$ 15,00</div>
+                    <p>por partida</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> 1 Jogo Gravado</li>
+                        <li><i class="fas fa-check"></i> Download em HD</li>
+                        <li><i class="fas fa-times"></i> Sem edição</li>
+                    </ul>
+                    <button class="btn secondary-btn full-width" onclick="window.location.href='cadastro.html?plan=Casual&price=15,00'">ESCOLHER</button>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>Mensalista</h3>
+                    <div class="price">R$ 50,00</div>
+                    <p>por mês</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Jogos Ilimitados</li>
+                        <li><i class="fas fa-check"></i> Download em 4K</li>
+                        <li><i class="fas fa-check"></i> Edição Automática</li>
+                    </ul>
+                    <button class="btn primary-btn full-width" onclick="window.location.href='cadastro.html?plan=Mensalista&price=50,00'">ASSINAR</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Clube</h3>
+                    <div class="price">Sob Consulta</div>
+                    <p>para quadras</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Instalação Grátis</li>
+                        <li><i class="fas fa-check"></i> Manutenção Inclusa</li>
+                        <li><i class="fas fa-check"></i> Painel Administrativo</li>
+                    </ul>
+                    <button class="btn secondary-btn full-width">CONTATO</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOVA SEÇÃO 2: Como funciona (Carregada via JSON/JS) -->
+        <section id="tutorial-section" class="tutorial-section">
+            <h2 class="section-title">Como Funciona o App</h2>
+            <div id="tutorial-grid" class="tutorial-grid">
+                <div class="tutorial-card">
+                    <div class="icon-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Encontre a Câmera</h3>
+                    <p>Localize as quadras parceiras que possuem nosso sistema de gravação instalado.</p>
+                </div>
+                <div class="tutorial-card">
+                    <div class="icon-box">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3>Faça a Jogada</h3>
+                    <p>Jogue normalmente. Quando fizer aquele golaço ou lance engraçado, prepare-se!</p>
+                </div>
+                <div class="tutorial-card">
+                    <div class="icon-box">
+                        <i class="fas fa-hand-pointer"></i>
+                    </div>
+                    <h3>Aperte o Botão</h3>
+                    <p>Corra até o botão físico na lateral da quadra e aperte para salvar o replay.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-column brand-column">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="img/LOGO OFICIAL NEGATIVA.png" alt="Logo Rodapé" width="140">
+                    </a>
+                </div>
+                <p class="footer-desc">A tecnologia que transforma seus jogos em memórias eternas. Grave, assista e compartilhe seus melhores lances.</p>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Navegação</h4>
+                <a href="#">Início</a>
+                <a href="#pricing-section">Planos</a>
+                <a href="#tutorial-section">Como Funciona</a>
+            </div>
+
+
+            <div class="footer-column">
+                <h4>Redes Sociais</h4>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Projeto Similar. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- MODAL DE AUTENTICAÇÃO -->
+    <div id="auth-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            
+            <!-- Tela de Login -->
+            <div id="login-view" class="auth-view active">
+                <h2>Acessar Conta</h2>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label>E-mail</label>
+                        <input type="email" id="login-email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Senha</label>
+                        <input type="password" id="login-pass" placeholder="Sua senha" required>
+                    </div>
+                    <div class="form-actions">
+                        <a href="#">Esqueci a senha</a>
+                    </div>
+                    <button type="submit" class="btn primary-btn full-width">ENTRAR</button>
+                </form>
+                <div class="auth-footer">
+                    <p>Não tem login? <a href="cadastro.html">Cadastrar</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE CONFIRMAÇÃO DE PLANO -->
+    <div id="plan-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal" id="close-plan-modal">&times;</span>
+            <h2>Confirmar Alteração</h2>
+            <p>Deseja alterar seu plano atual para <strong id="new-plan-name"></strong>?</p>
+            <p id="new-plan-price" style="color: var(--color-orange); font-size: 1.5em; font-weight: bold; margin: 10px 0; text-align: center;"></p>
+            <p style="color: var(--color-gray-text); font-size: 0.9em; margin-bottom: 20px;">A cobrança será atualizada no próximo ciclo.</p>
+            <div class="form-actions" style="justify-content: center; gap: 15px;">
+                <button class="btn secondary-btn" id="cancel-plan-btn">CANCELAR</button>
+                <button class="btn primary-btn" id="confirm-plan-btn">CONFIRMAR</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
